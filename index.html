@@ -3,23 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sewa Mobil & Private Trip Surabaya Murah | ASRent (Asri Car Rental)</title>
+    <title>Sewa Mobil Surabaya Murah & Private Trip Wisata | ASRent Pucang Anom</title>
     
     <!-- Primary SEO Meta Tags -->
-    <meta name="title" content="Sewa Mobil & Private Trip Surabaya Murah | ASRent (Asri Car Rental)">
-    <meta name="description" content="Pusat sewa mobil murah Surabaya & paket private trip Bromo, Tumpak Sewu, Kawah Ijen. Garasi di Jl. Pucang Anom Timur No 09 Surabaya. Hub: 0852-3120-2680.">
-    <meta name="keywords" content="sewa mobil surabaya, private trip bromo surabaya, tour tumpak sewu surabaya, paket wisata kawah ijen surabaya, rental mobil surabaya, asrent surabaya, sewa hiace premio surabaya">
+    <meta name="title" content="Sewa Mobil Surabaya Murah & Private Trip Wisata | ASRent Pucang Anom">
+    <meta name="description" content="Pusat sewa mobil murah Surabaya lepas kunci, plus driver 24 jam & paket private trip Bromo, Tumpak Sewu, Kawah Ijen. Garasi resmi di Jl. Pucang Anom Timur No 09 Surabaya. Hub: 0852-3120-2680.">
+    <meta name="keywords" content="sewa mobil surabaya, sewa mobil murah surabaya, rental mobil surabaya lepas kunci, private trip bromo surabaya, tour tumpak sewu surabaya, paket wisata kawah ijen surabaya, sewa hiace premio surabaya, sewa mobil pucang anom gubeng, asrent surabaya">
     <meta name="robots" content="index, follow">
     <meta name="language" content="Indonesian">
-    <meta name="author" content="ASRent (Asri Car Rental)">
+    <meta name="author" content="ASRent (Asri Car Rental Surabaya)">
     <link rel="canonical" href="https://asrent.my.id/">
 
-    <!-- Open Graph / WhatsApp Meta Tags -->
+    <!-- Open Graph / WhatsApp / Facebook Meta Tags -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://asrent.my.id/">
-    <meta property="og:title" content="Sewa Mobil Surabaya & Paket Private Trip Wisata Jatim - ASRent">
-    <meta property="og:description" content="Sewa mobil Surabaya & Paket Private Trip Bromo, Tumpak Sewu, Kawah Ijen. Unit Hiace Premio, All-in & Terpercaya. Hub: 0852-3120-2680">
+    <meta property="og:title" content="Sewa Mobil Surabaya Murah & Paket Private Trip Wisata - ASRent">
+    <meta property="og:description" content="Sewa mobil Surabaya murah & terawat 24 Jam serta Paket Private Trip Bromo, Tumpak Sewu, Kawah Ijen dengan Hiace Premio. Garasi di Jl. Pucang Anom Timur No 09 Surabaya. Hub: 0852-3120-2680">
     <meta property="og:image" content="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://asrent.my.id/">
+    <meta name="twitter:title" content="Sewa Mobil Surabaya Murah & Paket Private Trip Wisata - ASRent">
+    <meta name="twitter:description" content="Sewa mobil Surabaya 24 Jam & Paket Private Trip Jawa Timur. Garasi di Jl. Pucang Anom Timur No 09 Surabaya.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=1200&q=80">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="logo.png">
@@ -27,7 +34,7 @@
     <!-- Fonts & FontAwesome CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Tailwind CSS CDN -->
@@ -52,7 +59,7 @@
         }
     </script>
 
-    <!-- Custom Style definitions -->
+    <!-- Custom Styling -->
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
@@ -66,65 +73,137 @@
             box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
         }
         .glass-card {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(255, 255, 255, 0.96);
             backdrop-filter: blur(12px);
-            border: 1px solid rgba(226, 232, 240, 0.8);
+            border: 1px solid rgba(226, 232, 240, 0.9);
+        }
+        @keyframes pulse-subtle {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.04); }
+        }
+        .pulse-btn {
+            animation: pulse-subtle 2s infinite ease-in-out;
         }
     </style>
 
-    <!-- Schema.org JSON-LD for Local Business & Tour Agency SEO -->
+    <!-- Structured Data JSON-LD (Multi-Schema: AutoRental + FAQPage + TouristTrip) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "AutoRental",
-      "name": "ASRent - Asri Car Rental Surabaya",
-      "image": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341",
-      "@id": "https://asrent.my.id/",
-      "url": "https://asrent.my.id/",
-      "telephone": "+6285231202680",
-      "priceRange": "$$",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Jl. Pucang Anom Timur No 09",
-        "addressLocality": "Surabaya",
-        "addressRegion": "Jawa Timur",
-        "postalCode": "60282",
-        "addressCountry": "ID"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -7.2818,
-        "longitude": 112.7568
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
+      "@graph": [
+        {
+          "@type": "AutoRental",
+          "@id": "https://asrent.my.id/#business",
+          "name": "ASRent (Asri Car Rental Surabaya)",
+          "url": "https://asrent.my.id/",
+          "logo": "https://asrent.my.id/logo.png",
+          "image": "https://images.unsplash.com/photo-1549399542-7e3f8b79c341",
+          "description": "Pusat sewa mobil murah Surabaya lepas kunci, plus driver 24 jam dan paket private trip Bromo, Tumpak Sewu, Kawah Ijen. Garasi pusat di Jl. Pucang Anom Timur No 09 Surabaya.",
+          "telephone": "+6285231202680",
+          "priceRange": "IDR 300.000 - IDR 1.500.000",
+          "currenciesAccepted": "IDR",
+          "paymentAccepted": "Cash, Bank Transfer, QRIS",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jl. Pucang Anom Timur No 09, Kertajaya",
+            "addressLocality": "Surabaya",
+            "addressRegion": "Jawa Timur",
+            "postalCode": "60282",
+            "addressCountry": "ID"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -7.2818,
+            "longitude": 112.7568
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          },
+          "areaServed": [
+            {"@type": "City", "name": "Surabaya"},
+            {"@type": "City", "name": "Sidoarjo"},
+            {"@type": "City", "name": "Gresik"},
+            {"@type": "Place", "name": "Bandara Internasional Juanda"},
+            {"@type": "Place", "name": "Stasiun Gubeng"}
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://asrent.my.id/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Berapa tarif paket Private Trip Bromo, Tumpak Sewu, dan Kawah Ijen dari Surabaya?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tarif private trip ASRent: Bromo Rp 450.000/pax (include Jeep & tiket), Tumpak Sewu Rp 350.000/pax (include guide & tiket), dan Kawah Ijen Rp 500.000/pax (include masker gas khusus & tiket) dengan armada Toyota Hiace Premio berkapasitas minimal 10 pax."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Di mana alamat garasi dan kantor operasional ASRent Surabaya?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Garasi dan kantor ASRent beralamat di Jl. Pucang Anom Timur No 09, Kertajaya, Kec. Gubeng, Kota Surabaya, Jawa Timur 60282."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Apakah ASRent melayani sewa mobil lepas kunci di Surabaya?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ya, ASRent melayani sewa mobil lepas kunci dengan syarat mudah berupa E-KTP, SIM A, dan jaminan motor + STNK (warga lokal) atau tiket perjalanan & hotel (wisatawan/dinas)."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "TouristTrip",
+          "name": "Paket Private Trip Bromo Sunrise dari Surabaya",
+          "touristType": ["Family", "Corporate", "Adventure"],
+          "offers": {
+            "@type": "Offer",
+            "price": "450000",
+            "priceCurrency": "IDR",
+            "availability": "https://schema.org/InStock",
+            "url": "https://asrent.my.id/#trip"
+          }
+        }
+      ]
     }
+    </script>
+
+    <!-- Google Tag Manager / Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16770676636"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-16770676636');
     </script>
 </head>
 <body class="bg-white text-slate-800 antialiased selection:bg-brand-yellow selection:text-slate-900">
 
     <!-- Top Contact Bar -->
-    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4">
+    <div class="bg-slate-900 text-slate-300 text-xs py-2.5 px-4 border-b border-slate-800">
         <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
             <div class="flex items-center gap-4">
-                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-yellow"></i> Jl. Pucang Anom Timur No 09, Surabaya</span>
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-brand-yellow"></i> <strong>Garasi:</strong> Jl. Pucang Anom Timur No 09, Gubeng, Surabaya</span>
+                <span class="hidden md:inline text-slate-600">|</span>
                 <span class="hidden md:flex items-center gap-1.5"><i class="fa-solid fa-clock text-brand-yellow"></i> Layanan 24 Jam Nonstop</span>
             </div>
             <div class="flex items-center gap-4">
                 <a href="tel:085231202680" class="hover:text-brand-yellow transition flex items-center gap-1.5"><i class="fa-solid fa-phone text-brand-yellow"></i> 0852 3120 2680</a>
-                <a href="https://wa.me/6285231202680" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5"><i class="fa-brands fa-whatsapp text-emerald-400"></i> WhatsApp Fast Response</a>
+                <a href="https://wa.me/6285231202680" target="_blank" rel="noopener" class="hover:text-emerald-400 transition flex items-center gap-1.5 font-bold"><i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i> WhatsApp CS 24 Jam</a>
             </div>
         </div>
     </div>
 
     <!-- Main Navigation Bar -->
-    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 
@@ -136,16 +215,16 @@
                             AS
                         </div>
                         <div class="flex flex-col">
-                            <span class="font-extrabold text-xl tracking-tight text-slate-900 leading-tight">ASRent</span>
+                            <span class="font-black text-xl tracking-tight text-slate-900 leading-tight">ASRent</span>
                             <span class="text-[10px] uppercase font-bold tracking-widest text-slate-500">Asri Car Rental</span>
                         </div>
                     </div>
                 </a>
 
                 <!-- Desktop Nav -->
-                <nav class="hidden lg:flex items-center space-x-6 font-semibold text-sm text-slate-700">
+                <nav class="hidden lg:flex items-center space-x-6 font-bold text-sm text-slate-700">
                     <a href="#beranda" class="hover:text-brand-yellowHover transition py-2">Beranda</a>
-                    <a href="#trip" class="text-amber-600 font-bold hover:text-amber-700 transition py-2 flex items-center gap-1.5">
+                    <a href="#trip" class="text-amber-600 font-extrabold hover:text-amber-700 transition py-2 flex items-center gap-1.5">
                         <span class="bg-amber-100 text-amber-900 text-[10px] px-2 py-0.5 rounded-full font-black uppercase tracking-wider">Hot</span>
                         Private Trip
                     </a>
@@ -159,9 +238,9 @@
 
                 <!-- CTA Button Desktop -->
                 <div class="hidden lg:flex items-center gap-3">
-                    <a href="https://wa.me/6285231202680?text=Halo%20ASRent,%20saya%20ingin%20tanya%20sewa%20mobil%20atau%20paket%20private%20trip" 
+                    <a href="https://wa.me/6285231202680?text=Halo%20ASRent,%20saya%20ingin%20tanya%20sewa%20mobil%20atau%20paket%20private%20trip%20Surabaya" 
                        target="_blank" rel="noopener"
-                       class="yellow-gradient hover:brightness-105 text-slate-900 font-extrabold px-5 py-2.5 rounded-xl text-sm shadow-md transition flex items-center gap-2 transform hover:-translate-y-0.5">
+                       class="yellow-gradient hover:brightness-105 text-slate-900 font-extrabold px-6 py-2.5 rounded-xl text-sm shadow-md transition flex items-center gap-2 transform hover:-translate-y-0.5">
                         <i class="fa-brands fa-whatsapp text-lg"></i>
                         <span>Pesan WhatsApp</span>
                     </a>
@@ -185,19 +264,19 @@
                 <span class="text-[10px] bg-amber-200 text-amber-900 px-2 py-0.5 rounded-full font-black">PROMO</span>
             </a>
             <a href="#armada" class="mobile-link block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Pilihan Armada</a>
-            <a href="#layanan" class="mobile-link block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Layanan</a>
+            <a href="#layanan" class="mobile-link block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Layanan Rental</a>
             <a href="#syarat" class="mobile-link block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Syarat Sewa</a>
             <a href="#artikel" class="mobile-link block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Artikel Otomotif</a>
             <a href="#lokasi" class="mobile-link block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">Lokasi Garasi</a>
             <a href="#faq" class="mobile-link block px-3 py-2 rounded-lg font-semibold text-slate-700 hover:bg-slate-100">FAQ</a>
-            <a href="https://wa.me/6285231202680?text=Halo%20ASRent,%20saya%20ingin%20tanya%20sewa%20mobil%20atau%20paket%20trip" target="_blank" rel="noopener" class="mobile-link block text-center yellow-gradient font-extrabold px-4 py-3 rounded-xl text-slate-900 shadow mt-4">
+            <a href="https://wa.me/6285231202680?text=Halo%20ASRent,%20saya%20ingin%20tanya%20sewa%20mobil%20atau%20paket%20trip" target="_blank" rel="noopener" class="mobile-link block text-center yellow-gradient font-black px-4 py-3 rounded-xl text-slate-900 shadow mt-4">
                 <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Hubungi 0852 3120 2680
             </a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="beranda" class="relative pt-8 pb-16 lg:py-24 overflow-hidden bg-gradient-to-b from-amber-50/40 via-white to-white">
+    <section id="beranda" class="relative pt-8 pb-16 lg:py-24 overflow-hidden bg-gradient-to-b from-amber-50/50 via-white to-white">
         <div class="absolute -top-24 -right-24 w-96 h-96 bg-yellow-200/50 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute top-1/2 -left-24 w-72 h-72 bg-amber-100/50 rounded-full blur-2xl pointer-events-none"></div>
 
@@ -207,7 +286,7 @@
                 <!-- Hero Left Content -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 text-amber-900 font-bold text-xs sm:text-sm shadow-sm border border-amber-200">
-                        <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+                        <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-ping"></span>
                         <i class="fa-solid fa-star text-amber-500"></i> Sewa Mobil & Private Trip Surabaya Terpercaya
                     </div>
 
@@ -215,24 +294,24 @@
                         Pusat <span class="text-amber-500 underline decoration-yellow-400 decoration-4 underline-offset-4">Sewa Mobil Surabaya</span> & Paket Private Trip Wisata
                     </h1>
 
-                    <p class="text-slate-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                        Selamat datang di <strong>ASRent (Asri Car Rental)</strong>. Solusi transportasi sewa mobil lepas kunci, plus sopir, hingga <strong>Paket Private Trip Eksklusif</strong> ke Bromo, Tumpak Sewu, dan Kawah Ijen dengan armada mewah Toyota Hiace Premio. Garasi kami di <strong>Jl. Pucang Anom Timur No 09 Surabaya</strong>.
+                    <p class="text-slate-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 font-medium">
+                        Selamat datang di <strong>ASRent (Asri Car Rental)</strong>. Layanan persewaan mobil lepas kunci, plus driver berseragam, serta <strong>Paket Private Trip All-In</strong> ke Bromo, Tumpak Sewu, dan Kawah Ijen menggunakan unit eksekutif Toyota Hiace Premio. Garasi pusat kami berlokasi di <strong>Jl. Pucang Anom Timur No 09 Surabaya</strong>.
                     </p>
 
                     <!-- Trust Badges -->
                     <div class="pt-2 grid grid-cols-2 sm:grid-cols-3 gap-3 text-left">
-                        <div class="p-3 bg-white rounded-2xl border border-slate-100 shadow-sm flex items-center gap-3">
-                            <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-base shrink-0">
+                        <div class="p-3.5 bg-white rounded-2xl border border-slate-100 shadow-sm flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-lg shrink-0">
                                 <i class="fa-solid fa-shield-halved"></i>
                             </div>
                             <div>
                                 <h4 class="font-bold text-xs text-slate-900">Unit Terawat</h4>
-                                <p class="text-[11px] text-slate-500">Service Rutin</p>
+                                <p class="text-[11px] text-slate-500">Service Rutin Resmi</p>
                             </div>
                         </div>
 
-                        <div class="p-3 bg-white rounded-2xl border border-slate-100 shadow-sm flex items-center gap-3">
-                            <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-base shrink-0">
+                        <div class="p-3.5 bg-white rounded-2xl border border-slate-100 shadow-sm flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-lg shrink-0">
                                 <i class="fa-solid fa-mountain-sun"></i>
                             </div>
                             <div>
@@ -241,24 +320,24 @@
                             </div>
                         </div>
 
-                        <div class="p-3 bg-white rounded-2xl border border-slate-100 shadow-sm flex items-center gap-3 col-span-2 sm:col-span-1">
-                            <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-base shrink-0">
+                        <div class="p-3.5 bg-white rounded-2xl border border-slate-100 shadow-sm flex items-center gap-3 col-span-2 sm:col-span-1">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-bold text-lg shrink-0">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-xs text-slate-900">Pucang Anom</h4>
-                                <p class="text-[11px] text-slate-500">Pusat Surabaya</p>
+                                <h4 class="font-bold text-xs text-slate-900">Pucang Anom 09</h4>
+                                <p class="text-[11px] text-slate-500">Gubeng Surabaya</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="pt-3 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
                         <a href="#trip" 
-                           class="w-full sm:w-auto yellow-gradient hover:brightness-105 text-slate-900 font-extrabold px-8 py-4 rounded-2xl shadow-lg transition flex items-center justify-center gap-3 text-base">
+                           class="w-full sm:w-auto yellow-gradient hover:brightness-105 text-slate-900 font-black px-8 py-4 rounded-2xl shadow-lg transition flex items-center justify-center gap-3 text-base">
                             <i class="fa-solid fa-compass text-slate-900"></i>
                             <span>Lihat Paket Private Trip</span>
                         </a>
-                        <a href="#armada" class="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold px-7 py-4 rounded-2xl transition text-center text-sm">
+                        <a href="#armada" class="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold px-7 py-4 rounded-2xl transition text-center text-sm border border-slate-200">
                             Pilihan Sewa Mobil <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
                         </a>
                     </div>
@@ -272,7 +351,7 @@
                         </div>
 
                         <h3 class="text-xl font-black text-slate-900 mt-2 mb-1">Cek Ketersediaan & Trip</h3>
-                        <p class="text-xs text-slate-500 mb-6">Konsultasi armada rental atau paket wisata privat langsung via WhatsApp.</p>
+                        <p class="text-xs text-slate-500 mb-6">Konsultasi ketersediaan armada rental mobil atau jadwal private trip secara instan.</p>
 
                         <form id="quickBookingForm" onsubmit="handleQuickBooking(event)" class="space-y-4">
                             <div>
@@ -285,11 +364,12 @@
                                         <option value="Private Trip Kawah Ijen (Rp 500rb/pax)">🔥 Private Trip Kawah Ijen - Rp 500.000/pax</option>
                                     </optgroup>
                                     <optgroup label="Sewa Mobil Surabaya">
-                                        <option value="Toyota Avanza">Toyota New Avanza</option>
+                                        <option value="Toyota Avanza New">Toyota New Avanza</option>
                                         <option value="Toyota Innova Reborn">Toyota Innova Reborn</option>
-                                        <option value="Toyota Innova Zenix">Toyota Innova Zenix</option>
+                                        <option value="Toyota Innova Zenix">Toyota Innova Zenix Hybrid</option>
                                         <option value="Toyota Fortuner VRZ">Toyota Fortuner VRZ</option>
-                                        <option value="Toyota Hiace Premio / Commuter">Toyota Hiace Premio</option>
+                                        <option value="Toyota Hiace Premio">Toyota Hiace Premio</option>
+                                        <option value="Toyota Agya">Toyota Agya</option>
                                         <option value="Toyota Alphard">Toyota Alphard VIP</option>
                                     </optgroup>
                                 </select>
@@ -302,6 +382,7 @@
                                     <option value="Sewa Lepas Kunci">Lepas Kunci (Self Drive)</option>
                                     <option value="Sewa Mobil + Driver">Dengan Driver / Sopir</option>
                                     <option value="Antar Jemput Bandara Juanda">Antar Jemput Bandara Juanda / Stasiun</option>
+                                    <option value="Perjalanan Luar Kota">Perjalanan Luar Kota / Dinas</option>
                                 </select>
                             </div>
 
@@ -311,8 +392,8 @@
                                     <input type="date" id="bookDate" required class="w-full px-3 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-yellow focus:outline-none text-slate-800 text-xs font-medium">
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Jumlah Orang / Durasi</label>
-                                    <input type="text" id="bookDuration" placeholder="Contoh: 10 Orang / 1 Hari" required class="w-full px-3 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-yellow focus:outline-none text-slate-800 text-xs font-medium">
+                                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Peserta / Durasi</label>
+                                    <input type="text" id="bookDuration" placeholder="Contoh: 10 Pax / 1 Hari" required class="w-full px-3 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-yellow focus:outline-none text-slate-800 text-xs font-medium">
                                 </div>
                             </div>
 
@@ -321,7 +402,7 @@
                                 <input type="text" id="bookName" placeholder="Masukkan nama Anda" required class="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-brand-yellow focus:outline-none text-slate-800 text-sm">
                             </div>
 
-                            <button type="submit" class="w-full yellow-gradient hover:brightness-105 text-slate-900 font-extrabold py-3.5 rounded-xl shadow transition text-center text-sm flex items-center justify-center gap-2 mt-2">
+                            <button type="submit" class="w-full yellow-gradient hover:brightness-105 text-slate-900 font-black py-3.5 rounded-xl shadow transition text-center text-sm flex items-center justify-center gap-2 mt-2">
                                 <i class="fa-solid fa-paper-plane"></i> Kirim Pesanan via WhatsApp
                             </button>
                         </form>
@@ -340,13 +421,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-xs font-black uppercase tracking-widest text-slate-900 yellow-gradient px-4 py-1.5 rounded-full shadow">
-                    <i class="fa-solid fa-fire mr-1"></i> Paket Wisata Spesial Jawa Timur
+                    <i class="fa-solid fa-fire mr-1"></i> Paket Wisata Eksklusif Jawa Timur
                 </span>
                 <h2 class="text-3xl sm:text-5xl font-black text-white mt-4 tracking-tight">
                     Paket Private Trip Eksklusif ASRent
                 </h2>
                 <p class="text-slate-400 mt-3 text-sm sm:text-base leading-relaxed">
-                    Nikmati liburan seru tanpa ribet bersama rombongan keluarga atau teman kantor. Fasilitas komplit dengan armada nyaman <strong>Toyota Hiace Premio</strong> dari Surabaya!
+                    Nikmati liburan seru dan nyaman bersama rombongan keluarga atau kolega kantor. Fasilitas lengkap all-in dengan armada eksekutif <strong>Toyota Hiace Premio</strong> dari Surabaya!
                 </p>
             </div>
 
@@ -355,10 +436,11 @@
                 <!-- Trip 1: Bromo -->
                 <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl flex flex-col justify-between hover:border-amber-400 transition-all duration-300 group hover:-translate-y-2">
                     <div>
-                        <div class="relative h-56 overflow-hidden">
+                        <div class="relative h-56 overflow-hidden bg-slate-900">
                             <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80" 
-                                 alt="Private Trip Bromo Sunrise Surabaya ASRent" 
-                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                                 alt="Paket Private Trip Bromo Sunrise Surabaya Murah ASRent" 
+                                 loading="lazy"
+                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-90">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-black/30"></div>
                             <span class="absolute top-4 left-4 yellow-gradient text-slate-900 text-xs font-black px-3.5 py-1 rounded-full shadow">
                                 ★ Best Seller
@@ -425,17 +507,18 @@
                 <!-- Trip 2: Tumpak Sewu -->
                 <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl flex flex-col justify-between hover:border-amber-400 transition-all duration-300 group hover:-translate-y-2">
                     <div>
-                        <div class="relative h-56 overflow-hidden">
+                        <div class="relative h-56 overflow-hidden bg-slate-900">
                             <img src="sewu.png" 
-                                 alt="Private Trip Air Terjun Tumpak Sewu Surabaya ASRent" 
-                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                                 alt="Paket Private Trip Air Terjun Tumpak Sewu dari Surabaya ASRent" 
+                                 loading="lazy"
+                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-90">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-black/30"></div>
                             <span class="absolute top-4 left-4 bg-emerald-500 text-slate-900 text-xs font-black px-3.5 py-1 rounded-full shadow">
                                 🌿 Wisata Alam Eksotis
                             </span>
                             <div class="absolute bottom-3 left-4 right-4">
                                 <h3 class="text-2xl font-black text-white">Private Trip Tumpak Sewu</h3>
-                                <p class="text-xs text-emerald-300 font-semibold">Air Terjun Niagara-nya Jawa Timur, Goa Tetes & Panorama</p>
+                                <p class="text-xs text-emerald-300 font-semibold">Air Terjun Niagara Jawa Timur, Panorama & Goa Tetes</p>
                             </div>
                         </div>
 
@@ -472,7 +555,7 @@
                                     </li>
                                     <li class="flex items-center gap-2.5">
                                         <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>Air Mineral & Snack Lembut</span>
+                                        <span>Air Mineral & Snack Perjalanan</span>
                                     </li>
                                     <li class="flex items-center gap-2.5">
                                         <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
@@ -495,17 +578,18 @@
                 <!-- Trip 3: Kawah Ijen -->
                 <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl flex flex-col justify-between hover:border-amber-400 transition-all duration-300 group hover:-translate-y-2">
                     <div>
-                        <div class="relative h-56 overflow-hidden">
+                        <div class="relative h-56 overflow-hidden bg-slate-900">
                             <img src="ijen.png" 
-                                 alt="Private Trip Kawah Ijen Blue Fire Surabaya ASRent" 
-                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
+                                 alt="Paket Private Trip Kawah Ijen Blue Fire dari Surabaya ASRent" 
+                                 loading="lazy"
+                                 class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-90">
                             <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-black/30"></div>
                             <span class="absolute top-4 left-4 bg-cyan-400 text-slate-900 text-xs font-black px-3.5 py-1 rounded-full shadow">
                                 🌌 Blue Fire & Sunrise
                             </span>
                             <div class="absolute bottom-3 left-4 right-4">
                                 <h3 class="text-2xl font-black text-white">Private Trip Kawah Ijen</h3>
-                                <p class="text-xs text-cyan-300 font-semibold">Fenomena Api Biru (Blue Fire) Langka & Danau Asam Tosca</p>
+                                <p class="text-xs text-cyan-300 font-semibold">Fenomena Api Biru (Blue Fire) Langka & Danau Kawah Tosca</p>
                             </div>
                         </div>
 
@@ -588,7 +672,7 @@
                     Family MPV
                 </button>
                 <button onclick="filterCars('suv')" class="filter-btn bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm transition">
-                    SUV & Executive
+                    SUV & Luxury
                 </button>
                 <button onclick="filterCars('microbus')" class="filter-btn bg-white text-slate-600 hover:bg-slate-100 border border-slate-200 font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm transition">
                     Rombongan / Hiace
@@ -601,7 +685,7 @@
                 <!-- Car Item 1: Avanza -->
                 <div class="car-card mpv bg-white rounded-3xl overflow-hidden border border-slate-200 custom-shadow transition hover:-translate-y-1">
                     <div class="relative h-52 bg-slate-100 overflow-hidden">
-                        <img src="avanza.png" alt="Sewa Mobil Avanza Surabaya Murah ASRent" class="w-full h-full object-cover">
+                        <img src="avanza.png" alt="Sewa Mobil Avanza Murah Surabaya Lepas Kunci ASRent" loading="lazy" class="w-full h-full object-cover">
                         <span class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur text-white font-bold text-xs px-3 py-1 rounded-full"><i class="fa-solid fa-star text-brand-yellow mr-1"></i> Favorit Hemat</span>
                     </div>
                     <div class="p-6">
@@ -610,7 +694,7 @@
                         
                         <div class="grid grid-cols-3 gap-2 py-3 my-2 border-y border-slate-100 text-xs font-semibold text-slate-600">
                             <div class="flex items-center gap-1.5"><i class="fa-solid fa-user-group text-amber-500"></i> 7 Kursi</div>
-                            <div class="flex items-center gap-1.5"><i class="fa-solid fa-gears text-amber-500"></i> Manual/Matik</div>
+                            <div class="flex items-center gap-1.5"><i class="fa-solid fa-gears text-amber-500"></i> Manual/Matic</div>
                             <div class="flex items-center gap-1.5"><i class="fa-solid fa-snowflake text-amber-500"></i> AC Double</div>
                         </div>
 
@@ -628,16 +712,16 @@
                 <!-- Car Item 2: Innova Reborn -->
                 <div class="car-card mpv bg-white rounded-3xl overflow-hidden border border-slate-200 custom-shadow transition hover:-translate-y-1">
                     <div class="relative h-52 bg-slate-100 overflow-hidden">
-                        <img src="Innova.png" alt="Sewa Toyota Innova Reborn Surabaya Murah ASRent" class="w-full h-full object-cover">
+                        <img src="Innova.png" alt="Sewa Mobil Innova Reborn Diesel Surabaya ASRent Pucang Anom" loading="lazy" class="w-full h-full object-cover">
                         <span class="absolute top-4 right-4 yellow-gradient text-slate-900 font-extrabold text-xs px-3 py-1 rounded-full">Paling Laris</span>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-black text-slate-900">Toyota Innova Reborn</h3>
-                        <p class="text-xs text-slate-500 mb-4">Sangat nyaman untuk perjalanan dinas maupun liburan</p>
+                        <p class="text-xs text-slate-500 mb-4">Sangat nyaman dan bertenaga untuk perjalanan dinas maupun liburan</p>
                         
                         <div class="grid grid-cols-3 gap-2 py-3 my-2 border-y border-slate-100 text-xs font-semibold text-slate-600">
                             <div class="flex items-center gap-1.5"><i class="fa-solid fa-user-group text-amber-500"></i> 7 Kursi</div>
-                            <div class="flex items-center gap-1.5"><i class="fa-solid fa-gas-pump text-amber-500"></i> Diesel/Bensin</div>
+                            <div class="flex items-center gap-1.5"><i class="fa-solid fa-gas-pump text-amber-500"></i> Diesel Dex</div>
                             <div class="flex items-center gap-1.5"><i class="fa-solid fa-shield text-amber-500"></i> Nyaman</div>
                         </div>
 
@@ -655,17 +739,17 @@
                 <!-- Car Item 3: Innova Zenix -->
                 <div class="car-card mpv bg-white rounded-3xl overflow-hidden border border-slate-200 custom-shadow transition hover:-translate-y-1">
                     <div class="relative h-52 bg-slate-100 overflow-hidden">
-                        <img src="ZENIX.png" alt="Sewa Toyota Innova Zenix Surabaya Hybrid ASRent" class="w-full h-full object-cover">
+                        <img src="ZENIX.png" alt="Sewa Mobil Toyota Innova Zenix Hybrid Surabaya ASRent" loading="lazy" class="w-full h-full object-cover">
                         <span class="absolute top-4 right-4 bg-slate-900 text-white font-bold text-xs px-3 py-1 rounded-full">Unit Mewah</span>
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-black text-slate-900">Toyota Innova Zenix</h3>
-                        <p class="text-xs text-slate-500 mb-4">Generasi terbaru dengan fitur modern & suspensi empuk</p>
+                        <p class="text-xs text-slate-500 mb-4">Generasi terbaru dengan kabin kedap, modern & suspensi sangat empuk</p>
                         
                         <div class="grid grid-cols-3 gap-2 py-3 my-2 border-y border-slate-100 text-xs font-semibold text-slate-600">
                             <div class="flex items-center gap-1.5"><i class="fa-solid fa-user-group text-amber-500"></i> 7 Kursi</div>
-                            <div class="flex items-center gap-1.5"><i class="fa-solid fa-leaf text-amber-500"></i> Hybrid/Bensin</div>
-                            <div class="flex items-center gap-1.5"><i class="fa-solid fa-sun text-amber-500"></i> Panoramic</div>
+                            <div class="flex items-center gap-1.5"><i class="fa-solid fa-leaf text-amber-500"></i> Hybrid Irit</div>
+                            <div class="flex items-center gap-1.5"><i class="fa-solid fa-gear text-amber-500"></i> Matic CVT</div>
                         </div>
 
                         <div class="mt-5 flex items-center justify-between gap-3">
@@ -682,11 +766,11 @@
                 <!-- Car Item 4: Fortuner -->
                 <div class="car-card suv bg-white rounded-3xl overflow-hidden border border-slate-200 custom-shadow transition hover:-translate-y-1">
                     <div class="relative h-52 bg-slate-100 overflow-hidden">
-                        <img src="Fortuner GR.png" alt="Sewa Toyota Fortuner VRZ Surabaya ASRent" class="w-full h-full object-cover">
+                        <img src="Fortuner GR.png" alt="Sewa Mobil Toyota Fortuner VRZ Surabaya ASRent" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-black text-slate-900">Toyota Fortuner VRZ</h3>
-                        <p class="text-xs text-slate-500 mb-4">Tampilan gagah dan tangguh untuk tamu penting / bisnis</p>
+                        <p class="text-xs text-slate-500 mb-4">Tampilan gagah dan tangguh untuk pengawalan tamu penting / bisnis</p>
                         
                         <div class="grid grid-cols-3 gap-2 py-3 my-2 border-y border-slate-100 text-xs font-semibold text-slate-600">
                             <div class="flex items-center gap-1.5"><i class="fa-solid fa-user-group text-amber-500"></i> 7 Kursi</div>
@@ -705,14 +789,14 @@
                     </div>
                 </div>
 
-                <!-- Car Item 5: Hiace Premio / Commuter -->
+                <!-- Car Item 5: Hiace Premio -->
                 <div class="car-card microbus bg-white rounded-3xl overflow-hidden border border-slate-200 custom-shadow transition hover:-translate-y-1">
                     <div class="relative h-52 bg-slate-100 overflow-hidden">
-                        <img src="hiace.png" alt="Sewa Toyota Hiace Premio Surabaya Murah ASRent" class="w-full h-full object-cover">
+                        <img src="hiace.png" alt="Sewa Mobil Toyota Hiace Premio Surabaya untuk Trip Wisata ASRent" loading="lazy" class="w-full h-full object-cover">
                     </div>
                     <div class="p-6">
                         <h3 class="text-xl font-black text-slate-900">Toyota Hiace Premio</h3>
-                        <p class="text-xs text-slate-500 mb-4">Armada utama untuk rombongan wisata private trip Jawa Timur</p>
+                        <p class="text-xs text-slate-500 mb-4">Armada utama untuk rombongan wisata private trip Bromo & Jawa Timur</p>
                         
                         <div class="grid grid-cols-3 gap-2 py-3 my-2 border-y border-slate-100 text-xs font-semibold text-slate-600">
                             <div class="flex items-center gap-1.5"><i class="fa-solid fa-users text-amber-500"></i> 11-14 Kursi</div>
@@ -744,7 +828,7 @@
                     Layanan Rental Mobil Surabaya ASRent
                 </h2>
                 <p class="text-slate-600 mt-2 text-sm sm:text-base">
-                    Kami melayani berbagai kebutuhan transportasi pribadi, perjalanan bisnis dinas, hingga rombongan wisata di Surabaya & sekitarnya.
+                    Kami melayani berbagai kebutuhan transportasi pribadi, dinas perusahaan, hingga rombongan wisata di Surabaya & sekitarnya.
                 </p>
             </div>
 
@@ -771,7 +855,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Sewa Mobil + Driver Sopir</h3>
                     <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Duduk santai tanpa lelah menyetir. Driver profesional kami siap mengantar Anda secara sopan, tepat waktu, dan menguasai jalanan Surabaya.
+                        Duduk santai tanpa lelah menyetir. Driver profesional kami siap mengantar Anda secara sopan, tepat waktu, dan menguasai rute jalanan Surabaya.
                     </p>
                     <ul class="space-y-2 text-xs font-semibold text-slate-700">
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Driver Ramah & Bebas Asap Rokok</li>
@@ -786,7 +870,7 @@
                     </div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Antar Jemput Juanda / Stasiun</h3>
                     <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                        Layanan penjemputan Bandara Internasional Juanda, Stasiun Pasar Turi, atau Stasiun Gubeng langsung ke hotel / tujuan Anda.
+                        Layanan penjemputan Bandara Internasional Juanda, Stasiun Pasar Turi, atau Stasiun Gubeng langsung ke hotel / tujuan Anda di Surabaya.
                     </p>
                     <ul class="space-y-2 text-xs font-semibold text-slate-700">
                         <li class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-500"></i> Tepat Waktu Tanpa Menunggu</li>
@@ -858,7 +942,7 @@
                 <article onclick="openArticle('giias-2026')" class="cursor-pointer bg-white rounded-3xl overflow-hidden border border-slate-200 custom-shadow flex flex-col justify-between transition hover:-translate-y-1 hover:border-amber-400 group">
                     <div>
                         <div class="relative h-52 bg-slate-200 overflow-hidden">
-                            <img src="Zenix Banner.jpg" alt="Sorotan GIIAS 2026 Jakarta dan GIIAS Surabaya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <img src="Zenix Banner.jpg" alt="Sorotan GIIAS 2026 Jakarta dan GIIAS Surabaya 2026" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             <span class="absolute top-4 left-4 yellow-gradient text-slate-900 font-bold text-xs px-3 py-1 rounded-full shadow">GIIAS 2026 Event</span>
                         </div>
                         <div class="p-6">
@@ -884,7 +968,7 @@
                 <article onclick="openArticle('innova-comparison')" class="cursor-pointer bg-white rounded-3xl overflow-hidden border border-slate-200 custom-shadow flex flex-col justify-between transition hover:-translate-y-1 hover:border-amber-400 group">
                     <div>
                         <div class="relative h-52 bg-slate-200 overflow-hidden">
-                            <img src="Innova Banner.jpg" alt="Innova Zenix & Reborn Pilihan Utama" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <img src="Innova Banner.jpg" alt="Mengapa Innova Zenix & Reborn Selalu Jadi Pilihan Utama Sewa Mobil Murah Surabaya" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             <span class="absolute top-4 left-4 bg-slate-900 text-amber-400 font-bold text-xs px-3 py-1 rounded-full shadow">Tips Sewa Mobil</span>
                         </div>
                         <div class="p-6">
@@ -910,7 +994,7 @@
                 <article onclick="openArticle('sewa-lepas-kunci')" class="cursor-pointer bg-white rounded-3xl overflow-hidden border border-slate-200 custom-shadow flex flex-col justify-between transition hover:-translate-y-1 hover:border-amber-400 group">
                     <div>
                         <div class="relative h-52 bg-slate-200 overflow-hidden">
-                            <img src="Calya Banner.webp" alt="Panduan Sewa Mobil Lepas Kunci Surabaya" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                            <img src="Calya Banner.webp" alt="Panduan Sewa Mobil Lepas Kunci Surabaya Garasi Pucang Anom" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                             <span class="absolute top-4 left-4 yellow-gradient text-slate-900 font-bold text-xs px-3 py-1 rounded-full shadow">Panduan Lepas Kunci</span>
                         </div>
                         <div class="p-6">
@@ -944,7 +1028,7 @@
                     Kunjungi Garasi ASRent Rental Mobil Surabaya
                 </h2>
                 <p class="text-slate-600 mt-2 text-sm sm:text-base">
-                    Lokasi strategis di pusat kota Surabaya di <strong>Jl. Pucang Anom Timur No 09, Surabaya</strong>.
+                    Lokasi strategis di pusat kota Surabaya di <strong>Jl. Pucang Anom Timur No 09, Gubeng, Surabaya</strong>.
                 </p>
             </div>
 
@@ -1007,7 +1091,7 @@
                         <i class="fa-solid fa-chevron-down text-slate-500 transition-transform"></i>
                     </button>
                     <div class="faq-answer hidden px-6 py-4 text-slate-600 text-xs sm:text-sm border-t border-slate-100 bg-white leading-relaxed">
-                        Tarif Private Trip kami sangat bersaing: <strong>Bromo Rp 450.000/pax</strong> (sudah termasuk Jeep & tiket), <strong>Tumpak Sewu Rp 350.000/pax</strong> (sudah termasuk guide & tiket), dan <strong>Kawah Ijen Rp 500.000/pax</strong> (sudah termasuk masker gas & tiket). Semua paket menggunakan Toyota Hiace Premio berkapasitas minimal 10 pax serta include dokumentasi dan snack.
+                        Tarif Private Trip kami sangat terjangkau: <strong>Bromo Rp 450.000/pax</strong> (sudah termasuk Jeep & tiket masuk), <strong>Tumpak Sewu Rp 350.000/pax</strong> (sudah termasuk guide & tiket), dan <strong>Kawah Ijen Rp 500.000/pax</strong> (sudah termasuk masker gas respirator & tiket). Semua paket menggunakan Toyota Hiace Premio berkapasitas minimal 10 pax serta include dokumentasi dan snack.
                     </div>
                 </div>
 
@@ -1109,10 +1193,10 @@
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/6285231202680?text=Halo%20ASRent,%20saya%20ingin%20tanya%20sewa%20mobil%20atau%20paket%20trip%20wisata" 
        target="_blank" rel="noopener" 
-       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-4 shadow-2xl transition transform hover:scale-110 flex items-center justify-center gap-2 group" 
+       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full p-4 shadow-2xl transition transform hover:scale-110 flex items-center justify-center gap-2 group pulse-btn" 
        aria-label="Chat WhatsApp">
         <i class="fa-brands fa-whatsapp text-3xl"></i>
-        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 font-bold text-sm pl-1 pr-2">Chat Kami</span>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 font-bold text-sm pl-1 pr-2">Chat CS 24 Jam</span>
     </a>
 
     <!-- Article Reading Modal Dialog -->
@@ -1135,6 +1219,58 @@
 
     <!-- JavaScript Logic -->
     <script>
+        // Article Dataset
+        const articleData = {
+            'giias-2026': {
+                title: "Sorotan GIIAS 2026 Jakarta: Tren Mobil Hybrid & MPV Baru Siap Ramaikan Sewa Mobil Surabaya",
+                date: "11 Agustus 2026",
+                category: "GIIAS 2026 Event & Otomotif",
+                author: "Redaksi ASRent Surabaya",
+                readTime: "3 Menit Baca",
+                image: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80",
+                badge: "GIIAS 2026 Event",
+                content: `
+                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Ajang pameran otomotif terbesar di Indonesia, <strong>GIIAS 2026 (Gaikindo Indonesia International Auto Show)</strong> di Jakarta, baru saja resmi berlangsung dengan mengusung berbagai terobosan teknologi otomotif mutakhir. Pameran akbar ini meluncurkan lebih dari 37 model kendaraan baru dengan sorotan utama pada teknologi <em>Hybrid Electric Vehicle (HEV)</em> dan <em>MPV Premium</em> yang efisien dalam konsumsi bahan bakar.</p>
+                    <h4 class="text-base font-bold text-slate-900 mt-6 mb-2">Pameran GIIAS Surabaya Segera Menyapa Warga Jawa Timur</h4>
+                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Setelah kesuksesan gelaran Jakarta, rangkaian pameran otomotif ini berlanjut ke Kota Pahlawan melalui <strong>GIIAS Surabaya 2026</strong> di Grand City Convex Surabaya. Kehadiran GIIAS Surabaya menjadi momen penting bagi para pengusaha layanan transportasi dan rental mobil di Jawa Timur untuk menghadirkan armada paling modern.</p>
+                    <div class="my-6 p-4 bg-amber-50 border-l-4 border-amber-400 rounded-r-xl">
+                        <p class="text-xs font-semibold text-amber-900 italic">"Peningkatan permintaan kendaraan sewa berbahan bakar efisien dan kenyamanan ekstra menjadi alasan ASRent terus memperbarui pilihan armada MPV di Surabaya."</p>
+                    </div>
+                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Di <strong>ASRent Surabaya (Jl. Pucang Anom Timur No 09)</strong>, ketersediaan unit seperti Toyota Innova Zenix Hybrid dan Hiace Premio selalu dijaga dalam kondisi prima untuk kebutuhan wisata dan dinas kantor.</p>
+                `
+            },
+            'innova-comparison': {
+                title: "Mengapa Innova Zenix & Reborn Selalu Jadi Pilihan Utama Sewa Mobil Murah Surabaya?",
+                date: "08 Agustus 2026",
+                category: "Review Armada & Tips Rental",
+                author: "Tim Armada ASRent",
+                readTime: "4 Menit Baca",
+                image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80",
+                badge: "Tips Sewa Mobil",
+                content: `
+                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Dalam bisnis jasa transportasi dan persewaan mobil di Jawa Timur, <strong>Toyota Innova</strong> senantiasa memegang takhta sebagai armada pilihan paling diminati. Baik tipe <strong>Innova Reborn Diesel</strong> maupun generasi terbaru <strong>Innova Zenix Hybrid</strong> selalu menjadi pilihan nomor satu konsumen ASRent.</p>
+                    <h4 class="text-base font-bold text-slate-900 mt-6 mb-2">1. Innova Reborn Diesel: Tangguh & Andal Jalur Tanjakan</h4>
+                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Mesin Diesel 2.4L VNT Turbo terkenal sangat bertenaga di tanjakan dan efisien untuk perjalanan dinas maupun trip wisata Bromo dan Malang.</p>
+                    <h4 class="text-base font-bold text-slate-900 mt-6 mb-2">2. Innova Zenix Hybrid: Kenyamanan Kabin Kelas Atas</h4>
+                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Dengan platform TNGA dan sistem transmisi CVT yang halus, Innova Zenix memberikan kabin yang lebih kedap suara dan suspensi yang sangat empuk.</p>
+                `
+            },
+            'sewa-lepas-kunci': {
+                title: "Panduan Cepat Sewa Mobil Lepas Kunci Surabaya dari Garasi Jl. Pucang Anom Timur No 09",
+                date: "05 Agustus 2026",
+                category: "Panduan & Persyaratan",
+                author: "Layanan Pelanggan ASRent",
+                readTime: "3 Menit Baca",
+                image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=80",
+                badge: "Panduan Lepas Kunci",
+                content: `
+                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Layanan <strong>sewa mobil lepas kunci Surabaya</strong> memberikan privasi maksimal bagi perjalanan Anda. ASRent menyediakan persyaratan yang mudah bagi warga lokal maupun wisatawan luar kota.</p>
+                    <h4 class="text-base font-bold text-slate-900 mt-6 mb-2">Keunggulan Mengambil Mobil di Garasi Pucang Anom</h4>
+                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Lokasi garasi ASRent di <strong>Jl. Pucang Anom Timur No 09, Gubeng</strong> sangat mudah diakses dari Stasiun Gubeng maupun kawasan bisnis Surabaya Pusat.</p>
+                `
+            }
+        };
+
         // Direct Order Private Trip Handler
         function orderTrip(tripName, price) {
             const phoneNumber = "6285231202680";
@@ -1145,7 +1281,7 @@
         // Direct Order Car button handler
         function orderCar(carName) {
             const phoneNumber = "6285231202680";
-            const message = `Halo ASRent (Asri Car Rental), saya ingin bertanya / memesan unit *${carName}* untuk di Surabaya. Mohon ketersediaan unitnya. Terima kasih.`;
+            const message = `Halo ASRent (Asri Car Rental), saya ingin bertanya / memesan unit *${carName}* untuk di Surabaya. Mohon info ketersediaan unitnya. Terima kasih.`;
             window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
         }
 
@@ -1208,7 +1344,65 @@
             }
         }
 
-        // Mobile Navigation Drawer Toggle
+        // Article Modal Handlers
+        function openArticle(articleId) {
+            const article = articleData[articleId];
+            if (!article) return;
+
+            const container = document.getElementById('modalArticleContainer');
+            const modalWaBtn = document.getElementById('modalWaBtn');
+
+            container.innerHTML = `
+                <div class="relative h-64 sm:h-80 w-full overflow-hidden bg-slate-900">
+                    <img src="${article.image}" alt="${article.title}" class="w-full h-full object-cover opacity-90">
+                    <span class="absolute top-6 left-6 yellow-gradient text-slate-900 font-extrabold text-xs px-3.5 py-1.5 rounded-full shadow-lg">
+                        ${article.badge}
+                    </span>
+                </div>
+                <div class="p-6 sm:p-8">
+                    <div class="flex flex-wrap items-center gap-3 text-xs font-semibold text-slate-500 mb-3">
+                        <span class="text-amber-600 font-bold"><i class="fa-solid fa-folder mr-1"></i>${article.category}</span>
+                        <span>•</span>
+                        <span><i class="fa-regular fa-calendar text-slate-400 mr-1"></i>${article.date}</span>
+                        <span>•</span>
+                        <span><i class="fa-solid fa-user-pen text-slate-400 mr-1"></i>${article.author}</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mb-6 leading-tight">
+                        ${article.title}
+                    </h2>
+                    <div class="prose prose-slate max-w-none text-slate-700 border-t border-slate-100 pt-6">
+                        ${article.content}
+                    </div>
+                </div>
+            `;
+
+            if (modalWaBtn) {
+                const waText = encodeURIComponent(`Halo ASRent, saya selesai membaca artikel "${article.title}". Saya ingin bertanya ketersediaan sewa mobil di Surabaya.`);
+                modalWaBtn.href = `https://wa.me/6285231202680?text=${waText}`;
+            }
+
+            const modal = document.getElementById('articleModal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeArticleModal() {
+            const modal = document.getElementById('articleModal');
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Event Listeners for Modals & Mobile Menu
+        document.getElementById('articleModal')?.addEventListener('click', (e) => {
+            if (e.target.id === 'articleModal') {
+                closeArticleModal();
+            }
+        });
+
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -1223,21 +1417,6 @@
                     mobileMenu.classList.add('hidden');
                 });
             });
-        }
-
-        // Close modal on backdrop click
-        document.getElementById('articleModal')?.addEventListener('click', (e) => {
-            if (e.target.id === 'articleModal') {
-                closeArticleModal();
-            }
-        });
-
-        function closeArticleModal() {
-            const modal = document.getElementById('articleModal');
-            if (modal) {
-                modal.classList.add('hidden');
-                document.body.style.overflow = '';
-            }
         }
     </script>
 </body>
