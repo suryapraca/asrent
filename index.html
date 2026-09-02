@@ -427,14 +427,15 @@
                     Paket Private Trip Eksklusif ASRent
                 </h2>
                 <p class="text-slate-400 mt-3 text-sm sm:text-base leading-relaxed">
-                    Nikmati liburan seru dan nyaman bersama rombongan keluarga atau kolega kantor. Fasilitas lengkap all-in dengan armada eksekutif <strong>Toyota Hiace Premio</strong> dari Surabaya!
+                    Klik pada kartu trip untuk melihat <strong>Rundown/Itinerary Lengkap</strong>, spot foto, dan fasilitas detail. Armada mewah <strong>Toyota Hiace Premio</strong> dari Surabaya!
                 </p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 
-                <!-- Trip 1: Bromo -->
-                <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl flex flex-col justify-between hover:border-amber-400 transition-all duration-300 group hover:-translate-y-2">
+                <!-- Trip 1: Bromo (Clickable Card) -->
+                <div onclick="openTripModal('bromo')" 
+                     class="cursor-pointer bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl flex flex-col justify-between hover:border-amber-400 transition-all duration-300 group hover:-translate-y-2">
                     <div>
                         <div class="relative h-56 overflow-hidden bg-slate-900">
                             <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=800&q=80" 
@@ -445,8 +446,11 @@
                             <span class="absolute top-4 left-4 yellow-gradient text-slate-900 text-xs font-black px-3.5 py-1 rounded-full shadow">
                                 ★ Best Seller
                             </span>
+                            <span class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur text-amber-300 text-[11px] font-bold px-3 py-1 rounded-full border border-amber-400/30">
+                                <i class="fa-solid fa-circle-info mr-1"></i> Klik Rincian
+                            </span>
                             <div class="absolute bottom-3 left-4 right-4">
-                                <h3 class="text-2xl font-black text-white">Private Trip Bromo</h3>
+                                <h3 class="text-2xl font-black text-white group-hover:text-amber-400 transition">Private Trip Bromo</h3>
                                 <p class="text-xs text-amber-300 font-semibold">Penanjakan Sunrise, Kawah Bromo, Pasir Berbisik & Teletubbies</p>
                             </div>
                         </div>
@@ -464,31 +468,19 @@
                             </div>
 
                             <div class="space-y-3">
-                                <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-300">Fasilitas Termasuk:</h4>
-                                <ul class="space-y-2.5 text-xs text-slate-300">
+                                <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-300">Fasilitas Utama:</h4>
+                                <ul class="space-y-2 text-xs text-slate-300">
                                     <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>Transportasi <strong>Toyota Hiace Premio</strong> (PP Surabaya)</span>
+                                        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                        <span>Transport <strong>Toyota Hiace Premio</strong> (PP Surabaya)</span>
                                     </li>
                                     <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
+                                        <i class="fa-solid fa-circle-check text-emerald-400"></i>
                                         <span>Sewa <strong>Jeep 4x4 Bromo</strong> All Spot</span>
                                     </li>
                                     <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>Tiket Masuk TNBTS & Seluruh Retribusi</span>
-                                    </li>
-                                    <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span><strong>Dokumentasi</strong> Foto & Video Selama Trip</span>
-                                    </li>
-                                    <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>Biaya Parkir, BBM & Driver Profesional</span>
-                                    </li>
-                                    <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>Air Mineral & Snack Perjalanan</span>
+                                        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                        <span>Tiket TNBTS, Dokumentasi, Snack & Mineral</span>
                                     </li>
                                 </ul>
                             </div>
@@ -496,19 +488,19 @@
                     </div>
 
                     <div class="p-6 sm:p-7 pt-0">
-                        <button onclick="orderTrip('Private Trip Bromo', '450.000')" 
-                                class="w-full yellow-gradient hover:brightness-105 text-slate-900 font-extrabold py-3.5 rounded-2xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Pesan Trip Bromo Sekarang</span>
-                        </button>
+                        <div class="w-full yellow-gradient hover:brightness-105 text-slate-900 font-extrabold py-3.5 rounded-2xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>Lihat Itinerary & Pesan</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Trip 2: Tumpak Sewu -->
-                <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl flex flex-col justify-between hover:border-amber-400 transition-all duration-300 group hover:-translate-y-2">
+                <!-- Trip 2: Tumpak Sewu (Clickable Card) -->
+                <div onclick="openTripModal('tumpak-sewu')" 
+                     class="cursor-pointer bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl flex flex-col justify-between hover:border-amber-400 transition-all duration-300 group hover:-translate-y-2">
                     <div>
                         <div class="relative h-56 overflow-hidden bg-slate-900">
-                            <img src="sewu.png" 
+                            <img src= "sewu.png" 
                                  alt="Paket Private Trip Air Terjun Tumpak Sewu dari Surabaya ASRent" 
                                  loading="lazy"
                                  class="w-full h-full object-cover group-hover:scale-110 transition duration-700 opacity-90">
@@ -516,8 +508,11 @@
                             <span class="absolute top-4 left-4 bg-emerald-500 text-slate-900 text-xs font-black px-3.5 py-1 rounded-full shadow">
                                 🌿 Wisata Alam Eksotis
                             </span>
+                            <span class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur text-emerald-300 text-[11px] font-bold px-3 py-1 rounded-full border border-emerald-400/30">
+                                <i class="fa-solid fa-circle-info mr-1"></i> Klik Rincian
+                            </span>
                             <div class="absolute bottom-3 left-4 right-4">
-                                <h3 class="text-2xl font-black text-white">Private Trip Tumpak Sewu</h3>
+                                <h3 class="text-2xl font-black text-white group-hover:text-amber-400 transition">Private Trip Tumpak Sewu</h3>
                                 <p class="text-xs text-emerald-300 font-semibold">Air Terjun Niagara Jawa Timur, Panorama & Goa Tetes</p>
                             </div>
                         </div>
@@ -535,31 +530,19 @@
                             </div>
 
                             <div class="space-y-3">
-                                <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-300">Fasilitas Termasuk:</h4>
-                                <ul class="space-y-2.5 text-xs text-slate-300">
+                                <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-300">Fasilitas Utama:</h4>
+                                <ul class="space-y-2 text-xs text-slate-300">
                                     <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>Transportasi Nyaman <strong>Toyota Hiace Premio</strong></span>
+                                        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                        <span>Transport <strong>Toyota Hiace Premio</strong> Nyaman</span>
                                     </li>
                                     <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>Tiket Masuk Lokasi & Retribusi Wisata</span>
+                                        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                        <span><strong>Guide Lokal</strong> Trekking & Tiket Masuk</span>
                                     </li>
                                     <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span><strong>Tour Guide Lokal</strong> Berpengalaman (Trekking)</span>
-                                    </li>
-                                    <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span><strong>Dokumentasi</strong> Selama di Tumpak Sewu</span>
-                                    </li>
-                                    <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>Air Mineral & Snack Perjalanan</span>
-                                    </li>
-                                    <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>BBM, Parkir & Driver Berpengalaman</span>
+                                        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                        <span>Dokumentasi, Snack & Mineral Perjalanan</span>
                                     </li>
                                 </ul>
                             </div>
@@ -567,16 +550,16 @@
                     </div>
 
                     <div class="p-6 sm:p-7 pt-0">
-                        <button onclick="orderTrip('Private Trip Tumpak Sewu', '350.000')" 
-                                class="w-full yellow-gradient hover:brightness-105 text-slate-900 font-extrabold py-3.5 rounded-2xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Pesan Trip Tumpak Sewu</span>
-                        </button>
+                        <div class="w-full yellow-gradient hover:brightness-105 text-slate-900 font-extrabold py-3.5 rounded-2xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>Lihat Itinerary & Pesan</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Trip 3: Kawah Ijen -->
-                <div class="bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl flex flex-col justify-between hover:border-amber-400 transition-all duration-300 group hover:-translate-y-2">
+                <!-- Trip 3: Kawah Ijen (Clickable Card) -->
+                <div onclick="openTripModal('ijen')" 
+                     class="cursor-pointer bg-slate-800/90 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl flex flex-col justify-between hover:border-amber-400 transition-all duration-300 group hover:-translate-y-2">
                     <div>
                         <div class="relative h-56 overflow-hidden bg-slate-900">
                             <img src="ijen.png" 
@@ -587,8 +570,11 @@
                             <span class="absolute top-4 left-4 bg-cyan-400 text-slate-900 text-xs font-black px-3.5 py-1 rounded-full shadow">
                                 🌌 Blue Fire & Sunrise
                             </span>
+                            <span class="absolute top-4 right-4 bg-slate-900/80 backdrop-blur text-cyan-300 text-[11px] font-bold px-3 py-1 rounded-full border border-cyan-400/30">
+                                <i class="fa-solid fa-circle-info mr-1"></i> Klik Rincian
+                            </span>
                             <div class="absolute bottom-3 left-4 right-4">
-                                <h3 class="text-2xl font-black text-white">Private Trip Kawah Ijen</h3>
+                                <h3 class="text-2xl font-black text-white group-hover:text-amber-400 transition">Private Trip Kawah Ijen</h3>
                                 <p class="text-xs text-cyan-300 font-semibold">Fenomena Api Biru (Blue Fire) Langka & Danau Kawah Tosca</p>
                             </div>
                         </div>
@@ -606,31 +592,19 @@
                             </div>
 
                             <div class="space-y-3">
-                                <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-300">Fasilitas Termasuk:</h4>
-                                <ul class="space-y-2.5 text-xs text-slate-300">
+                                <h4 class="text-xs font-extrabold uppercase tracking-wider text-slate-300">Fasilitas Utama:</h4>
+                                <ul class="space-y-2 text-xs text-slate-300">
                                     <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>Transportasi Eksekutif <strong>Toyota Hiace Premio</strong></span>
+                                        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                        <span>Transport <strong>Toyota Hiace Premio</strong> Eksekutif</span>
                                     </li>
                                     <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>Tiket Masuk Cagar Alam Ijen & Retribusi</span>
+                                        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                        <span><strong>Masker Gas Khusus</strong> & Tiket Masuk Ijen</span>
                                     </li>
                                     <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span><strong>Masker Gas Khusus / Respirator</strong> Standar Ijen</span>
-                                    </li>
-                                    <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span><strong>Dokumentasi</strong> Foto & Video Spot Blue Fire</span>
-                                    </li>
-                                    <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>Air Mineral & Snack Perjalanan</span>
-                                    </li>
-                                    <li class="flex items-center gap-2.5">
-                                        <i class="fa-solid fa-circle-check text-emerald-400 text-sm"></i>
-                                        <span>Driver Berpengalaman Rute Banyuwangi / Bondowoso</span>
+                                        <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                                        <span>Dokumentasi, Snack & Driver Pengalaman</span>
                                     </li>
                                 </ul>
                             </div>
@@ -638,11 +612,10 @@
                     </div>
 
                     <div class="p-6 sm:p-7 pt-0">
-                        <button onclick="orderTrip('Private Trip Kawah Ijen', '500.000')" 
-                                class="w-full yellow-gradient hover:brightness-105 text-slate-900 font-extrabold py-3.5 rounded-2xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>Pesan Trip Kawah Ijen</span>
-                        </button>
+                        <div class="w-full yellow-gradient hover:brightness-105 text-slate-900 font-extrabold py-3.5 rounded-2xl shadow-lg transition flex items-center justify-center gap-2 text-sm">
+                            <i class="fa-solid fa-eye"></i>
+                            <span>Lihat Itinerary & Pesan</span>
+                        </div>
                     </div>
                 </div>
 
@@ -1199,6 +1172,39 @@
         <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 font-bold text-sm pl-1 pr-2">Chat CS 24 Jam</span>
     </a>
 
+    <!-- TRIP DETAIL MODAL DIALOG (Interactive) -->
+    <div id="tripModal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md hidden flex items-center justify-center p-4 sm:p-6 transition-opacity duration-300">
+        <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[92vh] overflow-y-auto shadow-2xl relative border border-slate-200 flex flex-col">
+            
+            <!-- Close Modal Button -->
+            <button onclick="closeTripModal()" class="absolute top-4 right-4 z-20 w-11 h-11 rounded-full bg-slate-900/70 hover:bg-slate-900 text-white flex items-center justify-center font-black text-xl shadow-lg transition" aria-label="Tutup Rincian Trip">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Modal Trip Content Area -->
+            <div id="modalTripContainer">
+                <!-- Content will be injected dynamically by JavaScript -->
+            </div>
+
+            <!-- Modal Trip Footer Buttons -->
+            <div class="p-6 bg-slate-900 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 sticky bottom-0 z-10">
+                <div class="text-center sm:text-left text-white">
+                    <span class="text-xs text-slate-400 block font-medium">Konsultasi / Booking Rombongan:</span>
+                    <span class="text-lg font-black text-yellow-400" id="modalTripPriceFooter">Rp 450.000 / pax (Min. 10 Pax)</span>
+                </div>
+                <div class="flex items-center gap-3 w-full sm:w-auto">
+                    <a id="modalTripWaBtn" href="#" target="_blank" rel="noopener" class="w-full sm:w-auto yellow-gradient text-slate-900 font-black px-6 py-3.5 rounded-xl text-sm shadow-lg flex items-center justify-center gap-2 hover:brightness-105 transition">
+                        <i class="fa-brands fa-whatsapp text-lg"></i> Booking Trip via WhatsApp
+                    </a>
+                    <button onclick="closeTripModal()" class="px-5 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold rounded-xl text-sm transition">
+                        Tutup
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <!-- Article Reading Modal Dialog -->
     <div id="articleModal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4 sm:p-6 transition-opacity duration-300">
         <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative border border-slate-100 flex flex-col">
@@ -1219,57 +1225,299 @@
 
     <!-- JavaScript Logic -->
     <script>
-        // Article Dataset
-        const articleData = {
-            'giias-2026': {
-                title: "Sorotan GIIAS 2026 Jakarta: Tren Mobil Hybrid & MPV Baru Siap Ramaikan Sewa Mobil Surabaya",
-                date: "11 Agustus 2026",
-                category: "GIIAS 2026 Event & Otomotif",
-                author: "Redaksi ASRent Surabaya",
-                readTime: "3 Menit Baca",
-                image: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80",
-                badge: "GIIAS 2026 Event",
-                content: `
-                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Ajang pameran otomotif terbesar di Indonesia, <strong>GIIAS 2026 (Gaikindo Indonesia International Auto Show)</strong> di Jakarta, baru saja resmi berlangsung dengan mengusung berbagai terobosan teknologi otomotif mutakhir. Pameran akbar ini meluncurkan lebih dari 37 model kendaraan baru dengan sorotan utama pada teknologi <em>Hybrid Electric Vehicle (HEV)</em> dan <em>MPV Premium</em> yang efisien dalam konsumsi bahan bakar.</p>
-                    <h4 class="text-base font-bold text-slate-900 mt-6 mb-2">Pameran GIIAS Surabaya Segera Menyapa Warga Jawa Timur</h4>
-                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Setelah kesuksesan gelaran Jakarta, rangkaian pameran otomotif ini berlanjut ke Kota Pahlawan melalui <strong>GIIAS Surabaya 2026</strong> di Grand City Convex Surabaya. Kehadiran GIIAS Surabaya menjadi momen penting bagi para pengusaha layanan transportasi dan rental mobil di Jawa Timur untuk menghadirkan armada paling modern.</p>
-                    <div class="my-6 p-4 bg-amber-50 border-l-4 border-amber-400 rounded-r-xl">
-                        <p class="text-xs font-semibold text-amber-900 italic">"Peningkatan permintaan kendaraan sewa berbahan bakar efisien dan kenyamanan ekstra menjadi alasan ASRent terus memperbarui pilihan armada MPV di Surabaya."</p>
-                    </div>
-                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Di <strong>ASRent Surabaya (Jl. Pucang Anom Timur No 09)</strong>, ketersediaan unit seperti Toyota Innova Zenix Hybrid dan Hiace Premio selalu dijaga dalam kondisi prima untuk kebutuhan wisata dan dinas kantor.</p>
-                `
+        // Comprehensive Dataset for Private Trips
+        const tripData = {
+            'bromo': {
+                name: "Private Trip Bromo Sunrise & Exploration",
+                price: "450.000",
+                minPax: "10 Pax",
+                image: "https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=1200&q=80",
+                badge: "★ Best Seller Private Trip",
+                tagline: "Eksplorasi Sunrise Golden Hour, Kawah Aktif Bromo, dan Hamparan Pasir Berbisik",
+                duration: "1 Hari / Midnight Trip (PP Surabaya)",
+                spots: [
+                    "Spot Sunrise Penanjakan 1 / Bukit Kingkong / Bukit Cinta",
+                    "Lembah Widodaren & Spot Foto Estetik",
+                    "Kawah Aktif Gunung Bromo & Pura Luhur Poten",
+                    "Lautan Pasir Berbisik Bromo",
+                    "Savana Hijau & Bukit Teletubbies"
+                ],
+                rundown: [
+                    { time: "23:30 - 00:00", desc: "Penjemputan rombongan di meeting point Surabaya (Hotel / Bandara Juanda / Stasiun / Garasi Pucang Anom Timur 09)." },
+                    { time: "00:00 - 03:00", desc: "Perjalanan Surabaya menuju Rest Area Bromo dengan Toyota Hiace Premio via Tol." },
+                    { time: "03:00 - 03:30", desc: "Tiba di Rest Area Transit Bromo, briefing keselamatan dan berganti menaiki Jeep 4x4 Hardtop." },
+                    { time: "03:30 - 06:00", desc: "Tiba di View Point Penanjakan 1/Kingkong Hill. Menikmati keindahan Golden Sunrise Bromo yang legendaris." },
+                    { time: "06:00 - 07:30", desc: "Sesi foto estetik di atas Jeep dengan latar belakang tebing magis Lembah Widodaren." },
+                    { time: "07:30 - 09:30", desc: "Trekking menuju bibir Kawah Aktif Bromo dan melewati Pura Luhur Poten (bisa jalan kaki / sewa kuda lokal)." },
+                    { time: "09:30 - 11:00", desc: "Eksplorasi hamparan Pasir Berbisik dan panorama rumput hijau Savana Bukit Teletubbies." },
+                    { time: "11:00 - 12:00", desc: "Kembali ke Rest Area Transit Jeep, bersih-bersih diri, dan bersiap perjalanan pulang." },
+                    { time: "12:00 - 15:30", desc: "Perjalanan kembali menuju Surabaya. Tiba kembali di Kota Surabaya dengan pengalaman tak terlupakan." }
+                ],
+                includes: [
+                    "Transportasi Eksekutif Toyota Hiace Premio (PP Surabaya - Bromo)",
+                    "Sewa Jeep 4x4 Bromo Resmi (All Spot)",
+                    "Tiket Masuk Resmi TNBTS Bromo & Seluruh Retribusi",
+                    "Jasa Driver Profesional, Ramah & Berpengalaman",
+                    "Bahan Bakar Minyak (BBM), Biaya Parkir & Tol Surabaya-Probolinggo",
+                    "Dokumentasi Foto & Video Selama Trip",
+                    "Air Mineral & Snack Perjalanan"
+                ],
+                excludes: [
+                    "Pengeluaran Pribadi & Sewa Kuda di Bromo",
+                    "Makan Siang / Kuliner Pribadi",
+                    "Sewa Jaket / Sarung Tangan (Bisa sewa di lokasi)"
+                ],
+                tips: "Gunakan jaket tebal (suhu 5-10°C), syal/kupluk, sepatu trekking yang nyaman, dan obat-obatan pribadi."
             },
-            'innova-comparison': {
-                title: "Mengapa Innova Zenix & Reborn Selalu Jadi Pilihan Utama Sewa Mobil Murah Surabaya?",
-                date: "08 Agustus 2026",
-                category: "Review Armada & Tips Rental",
-                author: "Tim Armada ASRent",
-                readTime: "4 Menit Baca",
-                image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80",
-                badge: "Tips Sewa Mobil",
-                content: `
-                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Dalam bisnis jasa transportasi dan persewaan mobil di Jawa Timur, <strong>Toyota Innova</strong> senantiasa memegang takhta sebagai armada pilihan paling diminati. Baik tipe <strong>Innova Reborn Diesel</strong> maupun generasi terbaru <strong>Innova Zenix Hybrid</strong> selalu menjadi pilihan nomor satu konsumen ASRent.</p>
-                    <h4 class="text-base font-bold text-slate-900 mt-6 mb-2">1. Innova Reborn Diesel: Tangguh & Andal Jalur Tanjakan</h4>
-                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Mesin Diesel 2.4L VNT Turbo terkenal sangat bertenaga di tanjakan dan efisien untuk perjalanan dinas maupun trip wisata Bromo dan Malang.</p>
-                    <h4 class="text-base font-bold text-slate-900 mt-6 mb-2">2. Innova Zenix Hybrid: Kenyamanan Kabin Kelas Atas</h4>
-                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Dengan platform TNGA dan sistem transmisi CVT yang halus, Innova Zenix memberikan kabin yang lebih kedap suara dan suspensi yang sangat empuk.</p>
-                `
+            'tumpak-sewu': {
+                name: "Private Trip Air Terjun Tumpak Sewu & Goa Tetes",
+                price: "350.000",
+                minPax: "10 Pax",
+                image: "https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=1200&q=80",
+                badge: "🌿 Wisata Alam Terindah Jatim",
+                tagline: "Menyaksikan Niagara-nya Indonesia dengan Panorama Tebing Air Melingkar",
+                duration: "1 Hari / Full Day Trip (PP Surabaya)",
+                spots: [
+                    "Panorama View Point Utama Coban Tumpak Sewu (View Atas)",
+                    "Dasar Lembah Air Terjun Tumpak Sewu (View Bawah)",
+                    "Tebing Nirwana & Sungai Aliran Lahar Dingin",
+                    "Goa Tetes & Aliran Air Alami Eksotis"
+                ],
+                rundown: [
+                    { time: "04:30 - 05:00", desc: "Penjemputan rombongan di seluruh area Kota Surabaya / Garasi Pucang Anom Timur 09." },
+                    { time: "05:00 - 08:30", desc: "Perjalanan nyaman menuju Pronojiwo Lumajang dengan armada Toyota Hiace Premio via Tol Malang." },
+                    { time: "08:30 - 09:30", desc: "Tiba di kawasan wisata, istirahat sejenak dan menikmati spot foto Panorama Atas Tumpak Sewu." },
+                    { time: "09:30 - 12:30", desc: "Trekking menuruni lembah didampingi Tour Guide Lokal bersertifikat, eksplorasi dasar air terjun megah dan Goa Tetes." },
+                    { time: "12:30 - 14:00", desc: "Trekking naik kembali ke pos istirahat, mandi dan bersih-bersih diri, serta santap makan siang santai." },
+                    { time: "14:00 - 18:30", desc: "Perjalanan kembali menuju Surabaya. Tiba di Surabaya dengan aman dan nyaman." }
+                ],
+                includes: [
+                    "Transportasi Wisata Toyota Hiace Premio (PP Surabaya)",
+                    "Tiket Masuk Wisata Tumpak Sewu & Goa Tetes",
+                    "Tour Guide Lokal Khusus Pendamping Trekking",
+                    "Dokumentasi Foto & Video Selama di Spot Wisata",
+                    "Air Mineral & Snack Ringan",
+                    "Biaya BBM, Tol & Retribusi Parkir Kendaraan",
+                    "Driver Profesional & Berpengalaman"
+                ],
+                excludes: [
+                    "Makan Siang Pribadi",
+                    "Sandal Trekking Karet / Baju Ganti Pribadi",
+                    "Pengeluaran Pribadi Luar Paket"
+                ],
+                tips: "Wajib membawa baju ganti, sandal gunung anti-selip/sepatu air, kantong plastik tahan air (waterproof case) untuk HP/kamera."
             },
-            'sewa-lepas-kunci': {
-                title: "Panduan Cepat Sewa Mobil Lepas Kunci Surabaya dari Garasi Jl. Pucang Anom Timur No 09",
-                date: "05 Agustus 2026",
-                category: "Panduan & Persyaratan",
-                author: "Layanan Pelanggan ASRent",
-                readTime: "3 Menit Baca",
-                image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=80",
-                badge: "Panduan Lepas Kunci",
-                content: `
-                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Layanan <strong>sewa mobil lepas kunci Surabaya</strong> memberikan privasi maksimal bagi perjalanan Anda. ASRent menyediakan persyaratan yang mudah bagi warga lokal maupun wisatawan luar kota.</p>
-                    <h4 class="text-base font-bold text-slate-900 mt-6 mb-2">Keunggulan Mengambil Mobil di Garasi Pucang Anom</h4>
-                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Lokasi garasi ASRent di <strong>Jl. Pucang Anom Timur No 09, Gubeng</strong> sangat mudah diakses dari Stasiun Gubeng maupun kawasan bisnis Surabaya Pusat.</p>
-                `
+            'ijen': {
+                name: "Private Trip Kawah Ijen Blue Fire & Sunrise",
+                price: "500.000",
+                minPax: "10 Pax",
+                image: "https://images.unsplash.com/photo-1601621915196-2621bfb0cd6e?auto=format&fit=crop&w=1200&q=80",
+                badge: "🌌 Fenomena Langka Blue Fire",
+                tagline: "Menyaksikan Keajaiban Api Biru Abadi Dunia & Danau Kawah Asam Terbesar",
+                duration: "1 Hari / Midnight Trekking (PP Surabaya)",
+                spots: [
+                    "Fenomena Api Biru (Blue Fire) Kawah Ijen",
+                    "Sunrise Danau Kawah Hijau Tosca Terbesar di Dunia",
+                    "Jalur Penambang Belerang Tradisional",
+                    "Hutan Mati & Panorama Puncak Ijen"
+                ],
+                rundown: [
+                    { time: "18:30 - 19:00", desc: "Penjemputan peserta di meeting point Surabaya (Garasi Pucang Anom / Hotel / Bandara Juanda)." },
+                    { time: "19:00 - 01:00", desc: "Perjalanan menuju Paltuding Kawah Ijen (Banyuwangi/Bondowoso) dengan Hiace Premio via Tol Trans Jawa." },
+                    { time: "01:00 - 02:00", desc: "Tiba di Pos Paltuding Ijen, istirahat sejenak, pembagian masker gas respirator standar & briefing pendakian." },
+                    { time: "02:00 - 04:30", desc: "Memulai pendakian trekking sejauh 3 km menuju bibir kawah dan turun ke spot Blue Fire." },
+                    { time: "04:30 - 06:00", desc: "Menikmati fenomena langka Blue Fire serta menyambut keindahan sunrise di tepi danau tosca Kawah Ijen." },
+                    { time: "06:00 - 08:00", desc: "Sesi dokumentasi di Hutan Mati Ijen dan perjalanan turun santai kembali menuju Pos Paltuding." },
+                    { time: "08:30 - 14:30", desc: "Perjalanan kembali menuju Surabaya. Tiba di Surabaya dengan selamat." }
+                ],
+                includes: [
+                    "Transportasi Eksekutif Toyota Hiace Premio (PP Surabaya - Ijen)",
+                    "Tiket Masuk Resmi Cagar Alam Kawah Ijen & Retribusi",
+                    "Sewa Masker Gas Khusus / Respirator Standar Ijen",
+                    "Dokumentasi Foto & Video Selama Pendakian",
+                    "Air Mineral & Snack Perjalanan",
+                    "Driver Berpengalaman Rute Banyuwangi & BBM + Parkir"
+                ],
+                excludes: [
+                    "Jasa Troli / Ojek Gerobak Dorong Ijen (Opsional)",
+                    "Makan Pribadi",
+                    "Senter / Headlamp Pribadi"
+                ],
+                tips: "Gunakan jaket tebal hangat, sarung tangan, sepatu olahraga/gunung yang nyaman, dan bawa senter kepala (headlamp)."
             }
         };
+
+        // Open Detailed Trip Modal
+        function openTripModal(tripKey) {
+            const trip = tripData[tripKey];
+            if (!trip) return;
+
+            const container = document.getElementById('modalTripContainer');
+            const footerPrice = document.getElementById('modalTripPriceFooter');
+            const waBtn = document.getElementById('modalTripWaBtn');
+
+            footerPrice.innerText = `Rp ${trip.price} / pax (${trip.minPax})`;
+
+            const waText = encodeURIComponent(
+                `Halo ASRent (Asri Car Rental Surabaya),\n\n` +
+                `Saya tertarik untuk memesan paket *${trip.name}* (Rp ${trip.price}/pax, ${trip.minPax}).\n` +
+                `Mohon informasi ketersediaan tanggal keberangkatan, titik jemput di Surabaya, dan prosedur reservasinya. Terima kasih!`
+            );
+            waBtn.href = `https://wa.me/6285231202680?text=${waText}`;
+
+            let rundownHtml = '';
+            trip.rundown.forEach(item => {
+                rundownHtml += `
+                    <div class="flex items-start gap-3 pb-3 border-b border-slate-100 last:border-0">
+                        <span class="bg-amber-100 text-amber-900 font-extrabold text-[11px] px-2.5 py-1 rounded-md shrink-0 whitespace-nowrap">${item.time}</span>
+                        <p class="text-xs text-slate-700 leading-relaxed font-medium">${item.desc}</p>
+                    </div>
+                `;
+            });
+
+            let spotsHtml = '';
+            trip.spots.forEach(spot => {
+                spotsHtml += `
+                    <li class="flex items-center gap-2 text-xs font-bold text-slate-800">
+                        <i class="fa-solid fa-map-pin text-amber-500 text-sm"></i>
+                        <span>${spot}</span>
+                    </li>
+                `;
+            });
+
+            let includesHtml = '';
+            trip.includes.forEach(inc => {
+                includesHtml += `
+                    <li class="flex items-start gap-2 text-xs text-slate-700 font-medium">
+                        <i class="fa-solid fa-circle-check text-emerald-500 text-sm mt-0.5 shrink-0"></i>
+                        <span>${inc}</span>
+                    </li>
+                `;
+            });
+
+            let excludesHtml = '';
+            trip.excludes.forEach(exc => {
+                excludesHtml += `
+                    <li class="flex items-start gap-2 text-xs text-slate-600">
+                        <i class="fa-solid fa-circle-xmark text-rose-400 text-sm mt-0.5 shrink-0"></i>
+                        <span>${exc}</span>
+                    </li>
+                `;
+            });
+
+            container.innerHTML = `
+                <!-- Trip Modal Hero Image -->
+                <div class="relative h-64 sm:h-80 w-full overflow-hidden bg-slate-950">
+                    <img src="${trip.image}" alt="${trip.name}" class="w-full h-full object-cover opacity-90">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-black/40 to-transparent"></div>
+                    
+                    <div class="absolute top-6 left-6 flex flex-wrap gap-2">
+                        <span class="yellow-gradient text-slate-900 font-black text-xs px-3.5 py-1.5 rounded-full shadow-md">
+                            ${trip.badge}
+                        </span>
+                        <span class="bg-slate-900/90 text-white font-bold text-xs px-3.5 py-1.5 rounded-full border border-slate-700">
+                            <i class="fa-solid fa-clock mr-1 text-amber-400"></i> ${trip.duration}
+                        </span>
+                    </div>
+
+                    <div class="absolute bottom-6 left-6 right-6">
+                        <h2 class="text-2xl sm:text-4xl font-black text-white leading-tight drop-shadow-md">
+                            ${trip.name}
+                        </h2>
+                        <p class="text-xs sm:text-sm text-amber-300 font-semibold mt-1">
+                            ${trip.tagline}
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Trip Modal Body Details -->
+                <div class="p-6 sm:p-8 space-y-8">
+                    
+                    <!-- Quick Price & Highlights Box -->
+                    <div class="bg-amber-50/80 border border-amber-200 p-5 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div>
+                            <span class="text-xs text-amber-900 font-extrabold uppercase tracking-wider block">Harga Spesial All-In</span>
+                            <div class="flex items-baseline gap-2 mt-0.5">
+                                <span class="text-3xl font-black text-slate-900">Rp ${trip.price}</span>
+                                <span class="text-xs font-bold text-slate-600">/ orang (${trip.minPax})</span>
+                            </div>
+                            <span class="text-[11px] text-amber-800 font-semibold mt-1 block">
+                                <i class="fa-solid fa-van-shuttle mr-1"></i> Penjemputan Fleksibel dari Seluruh Surabaya / Garasi Pucang Anom Timur 09
+                            </span>
+                        </div>
+                        <button onclick="orderTrip('${trip.name}', '${trip.price}')" class="w-full sm:w-auto yellow-gradient hover:brightness-105 text-slate-900 font-black px-6 py-3 rounded-xl text-xs sm:text-sm shadow flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Booking Cepat WA
+                        </button>
+                    </div>
+
+                    <!-- Destination Spots -->
+                    <div>
+                        <h3 class="text-base font-black text-slate-900 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-camera-retro text-amber-500"></i> Destinasi & Spot Eksplorasi:
+                        </h3>
+                        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 bg-slate-50 p-4 rounded-2xl border border-slate-200">
+                            ${spotsHtml}
+                        </ul>
+                    </div>
+
+                    <!-- Full Itinerary Rundown -->
+                    <div>
+                        <h3 class="text-base font-black text-slate-900 uppercase tracking-wider mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-route text-amber-500"></i> Itinerary & Rundown Perjalanan:
+                        </h3>
+                        <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-3">
+                            ${rundownHtml}
+                        </div>
+                    </div>
+
+                    <!-- Inclusions & Exclusions -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="p-5 bg-emerald-50/50 rounded-2xl border border-emerald-200">
+                            <h4 class="text-xs font-black uppercase tracking-wider text-emerald-900 mb-3 flex items-center gap-1.5">
+                                <i class="fa-solid fa-check-double text-emerald-600 text-sm"></i> Fasilitas Termasuk (Include):
+                            </h4>
+                            <ul class="space-y-2">
+                                ${includesHtml}
+                            </ul>
+                        </div>
+
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-200">
+                            <h4 class="text-xs font-black uppercase tracking-wider text-slate-700 mb-3 flex items-center gap-1.5">
+                                <i class="fa-solid fa-ban text-rose-500 text-sm"></i> Tidak Termasuk (Exclude):
+                            </h4>
+                            <ul class="space-y-2">
+                                ${excludesHtml}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Important Tips Box -->
+                    <div class="p-4 bg-yellow-50 border border-yellow-200 rounded-2xl flex items-start gap-3">
+                        <i class="fa-solid fa-lightbulb text-amber-600 text-lg mt-0.5"></i>
+                        <div>
+                            <h4 class="font-bold text-xs text-amber-950 uppercase">Saran Perlengkapan & Tips:</h4>
+                            <p class="text-xs text-amber-900 mt-0.5 leading-relaxed">${trip.tips}</p>
+                        </div>
+                    </div>
+
+                </div>
+            `;
+
+            const modal = document.getElementById('tripModal');
+            if (modal) {
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // Close Trip Modal
+        function closeTripModal() {
+            const modal = document.getElementById('tripModal');
+            if (modal) {
+                modal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
 
         // Direct Order Private Trip Handler
         function orderTrip(tripName, price) {
@@ -1345,6 +1593,43 @@
         }
 
         // Article Modal Handlers
+        const articleData = {
+            'giias-2026': {
+                title: "Sorotan GIIAS 2026 Jakarta: Tren Mobil Hybrid & MPV Baru Siap Ramaikan Sewa Mobil Surabaya",
+                date: "11 Agustus 2026",
+                category: "GIIAS 2026 Event & Otomotif",
+                author: "Redaksi ASRent Surabaya",
+                image: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80",
+                badge: "GIIAS 2026 Event",
+                content: `
+                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Ajang pameran otomotif terbesar di Indonesia, <strong>GIIAS 2026</strong> di Jakarta, meluncurkan lebih dari 37 model kendaraan baru dengan fokus pada teknologi <em>Hybrid Electric Vehicle (HEV)</em> dan kenyamanan MPV.</p>
+                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Di <strong>ASRent Surabaya (Jl. Pucang Anom Timur No 09)</strong>, ketersediaan unit seperti Toyota Innova Zenix Hybrid dan Hiace Premio selalu dijaga dalam kondisi prima untuk kebutuhan wisata dan dinas kantor.</p>
+                `
+            },
+            'innova-comparison': {
+                title: "Mengapa Innova Zenix & Reborn Selalu Jadi Pilihan Utama Sewa Mobil Murah Surabaya?",
+                date: "08 Agustus 2026",
+                category: "Review Armada & Tips Rental",
+                author: "Tim Armada ASRent",
+                image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80",
+                badge: "Tips Sewa Mobil",
+                content: `
+                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Dalam bisnis jasa transportasi di Jawa Timur, <strong>Toyota Innova Reborn Diesel</strong> dan <strong>Innova Zenix Hybrid</strong> selalu menjadi pilihan nomor satu konsumen ASRent karena suspensi empuk dan ketangguhan mesinnya.</p>
+                `
+            },
+            'sewa-lepas-kunci': {
+                title: "Panduan Cepat Sewa Mobil Lepas Kunci Surabaya dari Garasi Jl. Pucang Anom Timur No 09",
+                date: "05 Agustus 2026",
+                category: "Panduan & Persyaratan",
+                author: "Layanan Pelanggan ASRent",
+                image: "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=1200&q=80",
+                badge: "Panduan Lepas Kunci",
+                content: `
+                    <p class="text-sm leading-relaxed text-slate-700 mb-4">Layanan <strong>sewa mobil lepas kunci Surabaya</strong> memberikan privasi maksimal bagi perjalanan Anda. Lokasi garasi ASRent di <strong>Jl. Pucang Anom Timur No 09, Gubeng</strong> sangat mudah diakses dari Stasiun Gubeng maupun kawasan bisnis Surabaya Pusat.</p>
+                `
+            }
+        };
+
         function openArticle(articleId) {
             const article = articleData[articleId];
             if (!article) return;
@@ -1364,8 +1649,6 @@
                         <span class="text-amber-600 font-bold"><i class="fa-solid fa-folder mr-1"></i>${article.category}</span>
                         <span>•</span>
                         <span><i class="fa-regular fa-calendar text-slate-400 mr-1"></i>${article.date}</span>
-                        <span>•</span>
-                        <span><i class="fa-solid fa-user-pen text-slate-400 mr-1"></i>${article.author}</span>
                     </div>
                     <h2 class="text-2xl sm:text-3xl font-black text-slate-900 mb-6 leading-tight">
                         ${article.title}
@@ -1396,13 +1679,19 @@
             }
         }
 
-        // Event Listeners for Modals & Mobile Menu
+        // Close on backdrop clicks
+        document.getElementById('tripModal')?.addEventListener('click', (e) => {
+            if (e.target.id === 'tripModal') {
+                closeTripModal();
+            }
+        });
         document.getElementById('articleModal')?.addEventListener('click', (e) => {
             if (e.target.id === 'articleModal') {
                 closeArticleModal();
             }
         });
 
+        // Mobile Nav Drawer
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
